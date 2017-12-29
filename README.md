@@ -15,7 +15,7 @@ When you insmod this driver, myled0 will appear in /dev.
 * linux kernel source
 	* download kernel source into /usr/src/linux
 	* kernel build scripts : https://github.com/ryuichiueda/raspberry_pi_kernel_build_scripts
-* Led
+* LED
 * resistor
 	* 10[Ω]
 
@@ -23,7 +23,7 @@ When you insmod this driver, myled0 will appear in /dev.
 Connect led, resistors, to Raspberry Pi GPIO [5, 6, 13, 19, 26, 12, 16, 20, 21].
 
 
-※Digital dice uses 7 LEDs, but up to 9 LEDs can be used with this device driver.
+※Electronic dice uses 7 LEDs, but up to 9 LEDs can be used with this device driver.
 
 
 First, download this repository.
@@ -38,7 +38,6 @@ Next, move into robosys2017_device_driver directory and following command.
 cd robosys2017_device_driver
 make && sudo insmod myled.ko
 sudo chmod 666 /dev/myled0
-
 ```
 
 ## Usage
